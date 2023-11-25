@@ -1,3 +1,407 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+    background-color: #171719;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    width: 78%;
+    float: right;
+    /* clear: both; */
+}
+
+/* Navigation Styling Starts*/
+nav {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navLeft {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.navLeft span svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25%;
+    left: 4%;
+}
+
+input {
+    background-color: transparent;
+    padding: 10px 10px 10px 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    width: 300px;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navRight span {
+    font-size: 12px;
+    color: white;
+}
+
+.navRight span:nth-child(4) {
+    background-color: white;
+    width: 1px;
+    height: 15px;
+}
+
+.navRight span img {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navRight span svg {
+    width: 20px;
+    height: 20px;
+}
+/* Navigation Styling Ends  */
+
+
+/* Side Navigation Styling Starts*/
+aside {
+    background-color: #262629;
+    width: 17%;
+    float: left;
+    clear: left;
+    color: #fff;
+    padding: 24px;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 40%;
+}
+
+.asideMusic > p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0b8557;
+}
+
+.asideMusic div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.asideMusic .first {
+    color: #0b8557;
+    font-weight: 600;
+}
+
+.asideMusic div svg {
+    width: 20px;
+    height: 20px;
+}
+
+.asideLibrary > p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0b8557;
+}
+
+.asideLibrary div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.asideLibrary div svg {
+    width: 20px;
+    height: 20px;
+}
+
+.asideEvents > p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0b8557;
+}
+
+.asideEvents div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.asideEvents div svg {
+    width: 20px;
+    height: 20px;
+}
+/* Side Navigation Styling Ends  */
+
+
+/* Music Control Panel Styling Starts */
+.musicControl {
+    background-color: #36363a;
+    height: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 98%;
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mcLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mcLeftImg img {
+    width: 35px;
+    height: 35px;
+}
+
+.mcLeftInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.mcLeftInfo p:nth-child(1) {
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+}
+
+.mcLeftInfo p:nth-child(2) {
+    color: #b3b3b3;
+    margin-top: -10px;
+}
+
+.mcLeftIcon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.mcMiddle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mcMiddleIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mcMiddleIcons span svg {
+    width: 20px;
+    height: 20px;
+}
+
+.mcMiddleIcons span:nth-child(3) {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.mcMiddleIcons span:nth-child(3) svg {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.mcMiddleBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+    font-weight: 600;
+}
+
+.mcMiddleBar .bg {
+    background-color: gray;
+    display: block;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.bg .meter {
+    background-color: #0b8557;
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 10px 0 0 10px;
+}
+
+.mcRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mcRight svg {
+    width: 20px;
+    height: 20px;
+}
+
+.mcRight .bg {
+    background-color: gray;
+    display: block;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.mcRight .bg .meter {
+    background-color: #fff;
+    display: block;
+    width: 50%;
+    height: 5px;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+
+.meter .dot {
+    background-color: #fff;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -150%;
+    right: 0;
+}
+/* Music Control Panel Ends  */
+
+
+/* Image Slider Styling Starts */
+.images {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.images .image {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+
+.images div.center {
+    top: 10px;
+    left: 80px;
+    z-index: 1;
+}
+
+.images div:nth-child(2) {
+    top: 20px;
+    left: 50px;
+    z-index: -1;
+}
+
+.images div:nth-child(3) {
+    top: 30px;
+    left: 20px;
+    z-index: -2;
+}
+
+.images div:nth-child(4) {
+    top: 20px;
+    left: 200px;
+    z-index: -1;
+}
+
+.images div:nth-child(5) {
+    top: 30px;
+    left: 260px;
+    z-index: -2;
+}
+
+.details {
+    margin-top: -120px;
+    margin-left: 20px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.685);
+    width: 300px;
+}
+
+.details p:nth-child(1) {
+    font-weight: 600;
+    color: #fff;
+}
+
+.details p span {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-size: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+/* Image Slider styling Ends  */
+
+
+/* Recommend Styling Starts */
+article {
+    margin-top: 100px;
+    padding-left: 10px;
+}
+
+article p {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.recommended {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.recommended img {
+    height: 170px;
+}
+
